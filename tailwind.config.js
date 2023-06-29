@@ -2,11 +2,11 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   theme: {
     container: {
       center: true,
@@ -17,44 +17,66 @@ module.exports = {
     },
     extend: {
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          50: "#F1ECFE",
+          100: "#D4C5FD",
+          200: "#BFA9FC",
+          300: "#A282FA",
+          400: "#906AF9",
+          500: "#7445F8",
+          600: "#6A3FE2",
+          700: "#5231B0",
+          800: "#402688",
+          900: "#311D68",
         },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+        info: {
+          50: "#F4F7FE",
+          100: "#E9EFFD",
+          200: "#C8D8FA",
+          300: "#92B1F5",
+          400: "#5C8AF0",
+          500: "#2563EB",
+          600: "#1F54C8",
+          700: "#1943A0",
+          800: "#10327E",
+          900: "#0B265F",
+        },
+        success: {
+          50: "#EFFDF6",
+          100: "#D9F9E6",
+          200: "#B8F1D2",
+          300: "#8EE4BA",
+          400: "#6AD09D",
+          500: "#53B483",
+          600: "#2F9461",
+          700: "#2F7657",
+          800: "#255E46",
+          900: "#1E4D3A",
+        },
+        alert: {
+          50: "#FEFAF5",
+          100: "#FBF2CB",
+          200: "#FDE57E",
+          300: "#FFD16A",
+          400: "#FBBC55",
+          500: "#E9A23B",
+          600: "#C8811A",
+          700: "#A35C00",
+          800: "#8B4400",
+          900: "#78310B",
         },
         destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
+          50: "#FEF2F2",
+          100: "#FDE9E9",
+          200: "#FAC7C7",
+          300: "#F7A1A1",
+          400: "#F37373",
+          500: "#F34141",
+          600: "#CD3636",
+          700: "#A32E2E",
+          800: "#7C2323",
+          900: "#601B1B",
         },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
-      },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
         "accordion-down": {
@@ -73,4 +95,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};
