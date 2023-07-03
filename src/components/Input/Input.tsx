@@ -12,6 +12,23 @@ export interface InputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
   infoText?: string;
   helperText?: string;
+  type:
+    | "text"
+    | "password"
+    | "email"
+    | "number"
+    | "search"
+    | "file"
+    | "date"
+    | "datetime-local"
+    | "hidden"
+    | "tel"
+    | "url"
+    | "week"
+    | "month"
+    | "time"
+    | "reset"
+    | "submit";
 }
 
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
