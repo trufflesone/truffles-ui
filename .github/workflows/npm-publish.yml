@@ -24,6 +24,6 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org/
       - run: npm ci
-      - run: npm publish --tag latest --access private
+      - run: npm publish --tag latest --access restricted
         env:
           NODE_AUTH_TOKEN: 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
