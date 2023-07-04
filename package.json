@@ -63,5 +63,8 @@
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "jest": "^29.5.0"
+  }
 }
