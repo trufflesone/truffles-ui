@@ -19,7 +19,7 @@ jobs:
         run: npm run build-storybook
 
       - name: Deploy Storybook to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v3
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           path: ./storybook-static
