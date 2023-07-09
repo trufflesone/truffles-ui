@@ -13,7 +13,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm i
+      - run: npm ci
       - run: npm run rollup
 
   publish-npm:
@@ -28,4 +28,4 @@ jobs:
       - run: npm ci
       - run: npm publish --tag latest --access public
         env:
-          NODE_AUTH_TOKEN: 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
+          NODE_AUTH_TOKEN: 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
