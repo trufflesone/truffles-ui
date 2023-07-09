@@ -28,4 +28,4 @@ jobs:
       - run: npm ci
       - run: npm publish --tag latest --access public
         env:
-          NODE_AUTH_TOKEN: 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
+          NODE_AUTH_TOKEN: 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
