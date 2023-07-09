@@ -1,4 +1,4 @@
-name: Deploy Storybook to GitHub Pages
+name: Deploy Storybook
 
 on:
   push:
@@ -7,19 +7,13 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
       - uses: actions/checkout@v3
 
       - name: Install dependencies
-        run: npm ci
+        run: npm i
 
       - name: Build Storybook
         run: npm run build-storybook
-
-      - name: Deploy Storybook to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages
-          folder: storybook-static
