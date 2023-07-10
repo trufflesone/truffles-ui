@@ -8,44 +8,32 @@ import postcss from "rollup-plugin-postcss";
 
 import packageJson from "./package.json" assert { type: "json" };
 
-const outputOptions = {
-  sourcemap: false,
-  preserveModules: true,
-  preserveModulesRoot: "src",
-};
-
 export default [
   {
     input: "src/index.ts",
     output: [
       {
-        dir: "dist",
+        file: packageJson.main,
         format: "cjs",
-        entryFileNames: "[name].cjs",
-        exports: "auto",
-        ...outputOptions,
+        sourcemap: true,
       },
       {
-        dir: "dist",
+        file: packageJson.module,
         format: "esm",
-        ...outputOptions,
+        sourcemap: true,
       },
     ],
-    external: [/node_modules/],
     plugins: [
       peerDepsExternal(),
       resolve(),
       commonjs(),
-      typescript({
-        tsconfig: "./tsconfig.json",
-        exclude: ["**/stories/**", "**/tests/**", "./globals.css"],
-      }),
+      typescript({ tsconfig: "./tsconfig.json" }),
       terser(),
       postcss(),
     ],
   },
   {
-    input: "dist/index.d.ts",
+    input: "dist/esm/types/index.d.ts",
     output: [{ file: "dist/index.d.ts", format: "esm" }],
     plugins: [dts()],
     external: [/\.css$/],
