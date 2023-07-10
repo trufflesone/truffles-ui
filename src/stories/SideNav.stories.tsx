@@ -4,7 +4,10 @@ import { MdContacts } from "react-icons/md";
 import { IoMdContacts } from "react-icons/io";
 import { PiContactlessPaymentFill } from "react-icons/pi";
 
-import SideNav, { SideNavItem, SideNavList } from "./SideNav";
+import SideNav, {
+  SideNavItem,
+  SideNavList,
+} from "../components/SideNav/SideNav";
 
 export default {
   title: "Components/SideNav",

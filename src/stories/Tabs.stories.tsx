@@ -1,7 +1,11 @@
 import React from "react";
 import { StoryFn, Meta, StoryObj } from "@storybook/react";
 
-import Tabs, { TabsContent, TabsList, TabsTrigger } from "./Tabs";
+import Tabs, {
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "../components/Tabs/Tabs";
 
 export default {
   title: "Components/Tabs",

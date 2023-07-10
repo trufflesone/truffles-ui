@@ -5,7 +5,7 @@ import Tooltip, {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "./Tooltip";
+} from "../components/Tooltip/Tooltip";
 
 export default {
   title: "Components/Tooltip",

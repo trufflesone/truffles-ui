@@ -1,17 +1,17 @@
 import React from "react";
 import { StoryFn, Meta } from "@storybook/react";
 
-import Switch from "./Switch";
+import Checkbox from "../components/Checkbox/Checkbox";
 
 export default {
-  title: "Components/Switch",
-  component: Switch,
+  title: "Components/Checkbox",
+  component: Checkbox,
   argTypes: {
     onClick: { action: "clicked" },
   },
-} as Meta<typeof Switch>;
+} as Meta<typeof Checkbox>;
 
-const Template: StoryFn<typeof Switch> = (args) => <Switch {...args} />;
+const Template: StoryFn<typeof Checkbox> = (args) => <Checkbox {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {};

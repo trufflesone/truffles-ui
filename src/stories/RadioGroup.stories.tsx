@@ -1,8 +1,10 @@
 import React from "react";
 import { StoryFn, Meta, StoryObj } from "@storybook/react";
 
-import RadioGroup, { RadioGroupItem } from "./RadioGroup";
-import Label from "../Label/Label";
+import RadioGroup, {
+  RadioGroupItem,
+} from "../components/RadioGroup/RadioGroup";
+import Label from "../components/Label/Label";
 
 export default {
   title: "Components/RadioGroup",

@@ -6,7 +6,7 @@ import Select, {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "./Select";
+} from "../components/Select/Select";
 
 export default {
   title: "Components/Select",

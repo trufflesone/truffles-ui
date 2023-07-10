@@ -1,7 +1,7 @@
 import React from "react";
 import { StoryFn, Meta } from "@storybook/react";
 
-import Label from "./Label";
+import Label from "../components/Label/Label";
 
 export default {
   title: "Components/Label",
