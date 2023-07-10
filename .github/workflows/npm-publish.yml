@@ -6,7 +6,6 @@ on:
       - main
 
 jobs:
-
   publish-npm:
     runs-on: ubuntu-latest
     steps:
@@ -14,8 +13,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-          registry-url: 'https://registry.npmjs.org'
+          registry-url: "https://registry.npmjs.org"
       - run: npm ci
-      - run: npm run rollup && npm publish --tag latest --access public
+      - run: npm run build && npm publish --tag latest --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
