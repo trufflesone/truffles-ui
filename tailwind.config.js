@@ -17,6 +17,23 @@ module.exports = {
     },
     extend: {
       colors: {
+        background: "hsl(0, 0%, 100%)",
+        foreground: "hsl(222.2 47.4% 11.2%)",
+        muted: {
+          DEFAULT: "hsl(210 40% 96.1%)",
+          foreground: "#A29DB1",
+        },
+        popover: {
+          DEFAULT: "hsl(0 0% 100%)",
+          foreground: "#403E47",
+        },
+        border: "hsl(214.3 31.8% 91.4%)",
+        input: "#EEEDF1",
+        accent: {
+          DEFAULT: "#FAF9FA",
+          foreground: "hsl(222.2 47.4% 11.2%)",
+        },
+        ring: "#EEEDF1",
         grey: {
           50: "#FAF9FA",
           100: "#EEEDF1",

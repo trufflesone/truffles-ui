@@ -34,18 +34,18 @@
 - Install deps.
 
   ```shell
-  yarn
+  npm i
   ```
 
 - Modify components in `src/components` folder.
 - View components on storybook.
 
   ```shell
-  yarn storybook
+  npm run storybook
   ```
 
 - Bundle components with rollup.
 
   ```shell
-  yarn run rollup
+  npm run rollup
   ```
