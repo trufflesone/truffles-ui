@@ -2,7 +2,7 @@ import React from "react";
 import { StoryFn, Meta } from "@storybook/react";
 import { BsArrowRight, BsFillCartPlusFill } from "react-icons/bs";
 
-import Button from "../components/Button/Button";
+import { Button } from "../components";
 
 export default {
   title: "Components/Button",

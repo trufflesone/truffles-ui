@@ -2,11 +2,12 @@ import * as React from "react";
 import { HelpCircle } from "lucide-react";
 
 import { cn } from "../../lib/utils";
-import Tooltip, {
+import {
+  Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "../Tooltip/Tooltip";
+} from "../../components/Tooltip";
 
 export interface InputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {

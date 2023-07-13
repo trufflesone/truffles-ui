@@ -1,7 +1,7 @@
 import React from "react";
 import { StoryFn, Meta } from "@storybook/react";
 
-import Textarea from "../components/Textarea/Textarea";
+import { Textarea } from "../components";
 
 export default {
   title: "Components/Textarea",

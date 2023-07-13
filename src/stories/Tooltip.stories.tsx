@@ -1,11 +1,12 @@
 import React from "react";
 import { StoryFn, Meta, StoryObj } from "@storybook/react";
 
-import Tooltip, {
+import {
+  Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "../components/Tooltip/Tooltip";
+} from "../components";
 
 export default {
   title: "Components/Tooltip",

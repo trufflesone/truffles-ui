@@ -1,6 +1,6 @@
 {
   "name": "@trufflesone/truffles-ui",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "UI component library for Truffles.",
   "scripts": {
     "prebuild": "rm -rf dist",
@@ -8,8 +8,16 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trufflesone/truffles-ui.git"
+  },
   "author": "Truffles",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trufflesone/truffles-ui/issues"
+  },
+  "homepage": "https://github.com/trufflesone/truffles-ui#readme",
   "dependencies": {
     "@radix-ui/react-checkbox": "^1.0.4",
     "@radix-ui/react-label": "^2.0.2",
@@ -62,8 +70,8 @@
   "peerDependencies": {
     "react": "^18.2.0"
   },
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
   "files": [
     "dist"
   ],

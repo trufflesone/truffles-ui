@@ -1,12 +1,13 @@
 import React from "react";
 import { StoryFn, Meta, StoryObj } from "@storybook/react";
 
-import Select, {
+import {
+  Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "../components/Select/Select";
+} from "../components";
 
 export default {
   title: "Components/Select",
