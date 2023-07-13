@@ -42,6 +42,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
       "tel",
       "url",
     ];
+
     return (
       <React.Fragment>
         <div className="flex justify-end items-center relative">
