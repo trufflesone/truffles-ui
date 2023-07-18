@@ -9,3 +9,6 @@ export * from "./Switch";
 export * from "./Checkbox";
 export * from "./RadioGroup";
 export * from "./SideNav";
+export * from "./Popover";
+export * from "./Dialog";
+export * from "./Command";
