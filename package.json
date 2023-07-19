@@ -1,6 +1,6 @@
 {
   "name": "@trufflesone/truffles-ui",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "UI component library for Truffles.",
   "scripts": {
     "prebuild": "rm -rf dist",
@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/trufflesone/truffles-ui#readme",
   "dependencies": {
+    "@hookform/resolvers": "^3.1.1",
+    "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-checkbox": "^1.0.4",
     "@radix-ui/react-dialog": "^1.0.4",
     "@radix-ui/react-label": "^2.0.2",
@@ -32,7 +34,8 @@
     "class-variance-authority": "^0.6.1",
     "clsx": "^1.2.1",
     "cmdk": "^0.2.0",
-    "lucide-react": "^0.259.0"
+    "lucide-react": "^0.259.0",
+    "react-hook-form": "^7.45.2"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.22.5",

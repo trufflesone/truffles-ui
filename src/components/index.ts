@@ -12,3 +12,5 @@ export * from "./SideNav";
 export * from "./Popover";
 export * from "./Dialog";
 export * from "./Command";
+export * from "./Accordion";
+export * from "./Form";
