@@ -20,7 +20,6 @@ export interface InputProps
     | "number"
     | "search"
     | "file"
-    | "date"
     | "datetime-local"
     | "hidden"
     | "tel"

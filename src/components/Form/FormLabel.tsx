@@ -7,14 +7,19 @@ import useFormField from "./useFormField";
 
 const FormLabel = React.forwardRef<
   React.ElementRef<typeof LabelPrimitive.Root>,
-  React.ComponentPropsWithoutRef<typeof LabelPrimitive.Root>
->(({ className, ...props }, ref) => {
+  React.ComponentPropsWithoutRef<typeof LabelPrimitive.Root> & {
+    highLightError?: boolean;
+  }
+>(({ className, highLightError, ...props }, ref) => {
   const { error, formItemId } = useFormField();
 
   return (
     <Label
       ref={ref}
-      className={cn(error && "text-red-500 dark:text-red-900", className)}
+      className={cn(
+        error && highLightError && "text-red-500 dark:text-red-900",
+        className
+      )}
       htmlFor={formItemId}
       {...props}
     />
