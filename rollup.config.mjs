@@ -5,9 +5,6 @@ import dts from "rollup-plugin-dts";
 import terser from "@rollup/plugin-terser";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import postcss from "rollup-plugin-postcss";
-import preserveDirectives from "rollup-plugin-preserve-directives";
-
-// import packageJson from "./package.json" assert { type: "json" };
 
 const outputOptions = {
   sourcemap: false,
@@ -42,7 +39,6 @@ export default [
       }),
       terser(),
       postcss(),
-      preserveDirectives(),
     ],
   },
   {
