@@ -24,6 +24,12 @@ export const Default: Story = {
           Yes. It adheres to the WAI-ARIA design pattern.
         </AccordionContent>
       </AccordionItem>
+      <AccordionItem value="item-2" hideDivider>
+        <AccordionTrigger>Is it accessible?</AccordionTrigger>
+        <AccordionContent>
+          Yes. It adheres to the WAI-ARIA design pattern.
+        </AccordionContent>
+      </AccordionItem>
     </Accordion>
   ),
 };

@@ -47,5 +47,5 @@
 - Bundle components with rollup.
 
   ```shell
-  npm run rollup
+  npm run build
   ```
