@@ -1,41 +1,22 @@
 import * as React from "react";
 import { format } from "date-fns";
 import { Calendar as CalendarIcon } from "lucide-react";
+import { DayPickerProps } from "react-day-picker";
 
 import { cn } from "../../lib/utils";
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-  Calendar,
-  Button,
-} from "../../components";
-import { SelectSingleEventHandler } from "react-day-picker";
+import { Calendar } from "../Calendar";
+import { Popover, PopoverContent, PopoverTrigger } from "../Popover";
+import { Button } from "../Button";
 
-export interface DatePickerProps {
-  value: Date;
-  onChange: SelectSingleEventHandler;
+export type DatePickerProps = DayPickerProps & {
   placeholder?: string;
-  mode?: "single" | "default";
-  className?: string;
-  captionLayout?: "buttons" | "dropdown-buttons" | "dropdown";
-  fromYear?: number;
-  toYear?: number;
   disabled?: boolean;
-}
+};
 
-const DatePicker = ({
-  value,
-  onChange,
-  placeholder = "Pick a date",
-  mode = "default",
-  captionLayout,
-  fromYear,
-  toYear,
-  className,
-  disabled,
-  ...props
-}: DatePickerProps) => {
+const DatePicker = React.forwardRef<
+  React.ElementRef<typeof Popover>,
+  DatePickerProps
+>(({ placeholder = "Pick a date", className, disabled, ...props }) => {
   return (
     <Popover>
       <PopoverTrigger asChild>
@@ -43,13 +24,13 @@ const DatePicker = ({
           variant={"ghost"}
           className={cn(
             "w-full border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground justify-between text-left font-normal",
-            !value && "text-muted-foreground",
+            !props.selected && "text-muted-foreground",
             className
           )}
           disabled={disabled}
         >
-          {value ? (
-            <span>{format(value, "PPP")}</span>
+          {props.selected ? (
+            <span>{format(props.selected as Date, "PPP")}</span>
           ) : (
             <span>{placeholder}</span>
           )}
@@ -57,19 +38,11 @@ const DatePicker = ({
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-auto p-0" align="start">
-        <Calendar
-          mode={mode}
-          selected={value}
-          onSelect={onChange}
-          captionLayout={captionLayout}
-          fromYear={fromYear}
-          toYear={toYear}
-          initialFocus
-          {...props}
-        />
+        <Calendar {...props} />
       </PopoverContent>
     </Popover>
   );
-};
+});
+DatePicker.displayName = "DatePicker";
 
 export default DatePicker;

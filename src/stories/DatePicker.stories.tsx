@@ -16,13 +16,14 @@ const Template: StoryFn<typeof DatePicker> = (args) => <DatePicker {...args} />;
 export const Default = Template.bind({});
 Default.args = {
   mode: "single",
-  value: new Date(),
+  selected: new Date(),
 };
 
 export const WithYearMonthDropdown = Template.bind({});
 WithYearMonthDropdown.args = {
-  mode: "default",
-  value: new Date(),
+  mode: "single",
+  selected: new Date(),
+  onSelect: (date) => console.log(date),
   captionLayout: "dropdown-buttons",
   fromYear: 1900,
   toYear: 2100,

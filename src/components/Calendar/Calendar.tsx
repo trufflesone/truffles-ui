@@ -70,8 +70,6 @@ const Calendar = ({
           buttonVariants({ variant: "ghost" }),
           "h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100"
         ),
-        nav_button_previous: cn({ "absolute left-1": props.mode === "single" }),
-        nav_button_next: cn({ "absolute right-1": props.mode === "single" }),
         table: "w-full border-collapse space-y-1",
         head_row: "flex",
         head_cell:
