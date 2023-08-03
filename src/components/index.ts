@@ -16,3 +16,5 @@ export * from "./Accordion";
 export * from "./Form";
 export * from "./Calendar";
 export * from "./DatePicker";
+export * from "./ScrollArea";
+export * from "./Menubar";
