@@ -41,7 +41,7 @@
 - View components on storybook.
 
   ```shell
-  npm run storybook
+  npm run sb
   ```
 
 - Bundle components with rollup.

@@ -1,11 +1,11 @@
 {
   "name": "@trufflesone/truffles-ui",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "UI component library for Truffles.",
   "scripts": {
     "prebuild": "rm -rf dist",
     "build": "rollup -c",
-    "storybook": "storybook dev -p 6006",
+    "sb": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
   "repository": {

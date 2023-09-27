@@ -13,10 +13,12 @@ export type DatePickerProps = DayPickerProps & {
   disabled?: boolean;
 };
 
-const DatePicker = React.forwardRef<
-  React.ElementRef<typeof Popover>,
-  DatePickerProps
->(({ placeholder = "Pick a date", className, disabled, ...props }) => {
+const DatePicker = ({
+  placeholder = "Pick a date",
+  className,
+  disabled,
+  ...props
+}: DatePickerProps) => {
   return (
     <Popover>
       <PopoverTrigger asChild>
@@ -42,7 +44,6 @@ const DatePicker = React.forwardRef<
       </PopoverContent>
     </Popover>
   );
-});
-DatePicker.displayName = "DatePicker";
+};
 
 export default DatePicker;
