@@ -3,6 +3,7 @@ import "../src/globals.css";
 
 const preview: Preview = {
   parameters: {
+    layout: "centered",
     actions: { argTypesRegex: "^on[A-Z].*" },
     controls: {
       matchers: {
